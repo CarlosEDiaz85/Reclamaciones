@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Mapa Conceptual - GIVAC Reclamaciones PJ</title>
+<style>
+* { margin: 0; padding: 0; }
+#mindmap { display: block; width: 100vw; height: 100vh; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script>
+<script>
+(() => {
+  setTimeout(() => {
+    const { markmap: O, mm: h } = window, M = new O.Toolbar();
+    M.attach(h);
+    const re = M.render();
+    re.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+    document.body.append(re);
+  });
+})();
+</script>
+<script>
+((i, L, f, o) => {
+  const w = i();
+  window.mm = w.Markmap.create("svg#mindmap", (L || w.deriveOptions)(o), f);
+})(() => window.markmap, null, {
+  "content": "Producción y Tiempos de Entrega - GIVAC Reclamaciones PJ",
+  "children": [
+    {
+      "content": "1. Comparativo Proceso año 2023 - 2024",
+      "children": [
+        {
+          "content": "Año 2023",
+          "children": [
+            { "content": "1. Recepción de Universos", "children": [
+              { "content": "Validaciones por sistemas", "children": [
+                { "content": "1. Póliza" },
+                { "content": "2. Siniestros" },
+                { "content": "3. Fechas de comunicación" },
+                { "content": "4. Reps" },
+                { "content": "5. Rethus" },
+                { "content": "6. Mayor valor reclamado" },
+                { "content": "7. Pagos dobles" },
+                { "content": "8. Fallecidos" },
+                { "content": "9. Rnec" },
+                { "content": "10. Radicados no Válidos" },
+                { "content": "11. Topes" }
+              ]}
+            ]},
+            { "content": "2. Validaciones Año 2023", "children": [{ "content": "2. Validaciones Año 2024", "children": [
+            { "content": "1. Reclamaciones  Aprobadas Total y Parcial con Valor Aprobado Cero" },
+            { "content": "2. Reclamaciones en Estado Aprobada Total con Valor Glosado" },
+            { "content": "3. Reclamaciones Aprobadas Parciales Sin Valor Glosado" },
+            { "content": "4. Reclamaciones Aprobadas Total o Parcialmente Duplicadas Por Número de Reclamación" },
+            { "content": "5. Reclamaciones No Aprobadas Duplicadas Por Número de Reclamación" },
+            { "content": "6. Reclamaciones NO Aprobadas con Valor Aprobado" },
+            { "content": "7. Posibles Pagos Dobles – Duplicados" },
+            { "content": "8. Reclamaciones Nuevas NO Extemporáneas con Glosa 2003" },
+            { "content": "9. Reclamaciones Aprobadas Parciales y NO APROBADAS Sin Glosas" },
+            { "content": "10. Códigos de Glosa sin Descripción o errada" },
+            { "content": "11. Reclamaciones Aprobadas Total Con Glosas" },
+            { "content": "12. Glosas Automáticas Sin Levantar" },
+            { "content": "13. Glosas Automáticas Sin Ratificar" },
+            { "content": "14. Extemporaneidad (Resolución 1915 de 2008) > 30 Días en Reclamaciones Respuesta a Glosa - Sin Glosa 2007 - Personas Jurídicas" },
+            { "content": "15. Extemporaneidad (Resolución 1645 de 2016) > 60 Días en Reclamaciones Respuesta a Glosa - Sin Glosa 2008 - Personas Jurídicas" },
+            { "content": "16. Fecha de Evento Posterior a la Fecha de Muerte" },
+            { "content": "17. Sin Fecha de Muerte (Amparos Reclamados)" }
+            ]},]}, 
+            { "content": "3. Distribución de Universos", "children": [
+              { "content": "1. Componente Soportes", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" },
+              ]},
+              { "content": "2. Componente Financiero", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" }, 
+                ]},
+              { "content": "3. Componente Médico", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" }, 
+                ]},
+                { "content": "4. Componente Integración / Calidad Interna", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" }, 
+                ]},  
+            ]},
+            
+            { "content": "4. Auditoría Componentes", "children": [
+              { "content": "1. Componente Soportes", "children": [
+                { "content": "1. 50 Reclamaciones diarias" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 39 Auditores en Promedio" }
+              ]},
+              { "content": "2. Componente Financiero" , "children": [
+                { "content": "1. 600 Ítems diarios" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 38 Auditores en Promedio" }
+              ]},
+              { "content": "3. Componente Médico" , "children": [
+                { "content": "1. 360 Ítems diarios" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 39 Auditores en Promedio" }
+              ]}
+            ]},
+            
+            { "content": "5. Auditoria Integración / Calidad Interna", "children": [
+            { "content": "1. Componente Soportes", "children": [
+                { "content": "1. 25 Reclamaciones diarias, aprox. mitad de la producción general" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 5 Auditores en Promedio" }
+              ]},
+              { "content": "2. Componente Financiero" , "children": [
+                { "content": "1. 400 Ítems diarios, aprox. mitad de la producción general" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 38 Auditores en Promedio" }
+              ]},
+              { "content": "3. Componente Médico" , "children": [
+                { "content": "1. 180 Ítems diarios, aprox. mitad de la producción general" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 39 Auditores en Promedio" }
+              ]}
+            ]},
+            { "content": "6. Pre-cierre de Paquete", "children": [
+            { "content": "1. Solicitud Conformar paquete ", "children": [
+                { "content": "1. Área de Sistemas" }
+                ]},    
+            { "content": "2. Validaciones finales Internas pre-cierre ", "children": [
+                { "content": "1. Integración" },
+                { "content": "2. Ajustes Error Componentes" }
+                ]},
+            { "content": "3. Entrega de pre-cierre ", "children": [
+                { "content": "1. Área de Givac" },
+                ]},            
+              
+            ]}, 
+            { "content": "7. Resultado Muestra calidad Givra", "children": [
+              { "content": "1. Recepción No Conformidades "},
+              { "content": "2. Conciliación "},
+              { "content": "3. Ajustes posteriores"}           
+            ]},
+            { "content": "8. Cierre de paquete", "children": [
+              { "content": "1. Verificación de ajustes"},
+              { "content": "2. Solicitud de seguimientos"},
+              { "content": "3. Entrega de paquete"}           
+            ]},
+          ]
+        },
+
+        // AÑO 2024//
+        {
+          "content": " Proceso Año 2024",
+          "children": [
+            { "content": "1. Recepción de Universos", "children": [
+              { "content": "Validaciones por sistemas", "children": [
+                { "content": "1. Póliza" },
+                { "content": "2. Siniestros" },
+                { "content": "3. Fechas de comunicación" },
+                { "content": "4. Reps" },
+                { "content": "5. Rethus" },
+                { "content": "6. Mayor valor reclamado" },
+                { "content": "7. Pagos dobles" },
+                { "content": "8. Fallecidos" },
+                { "content": "9. Rnec" },
+                { "content": "10. Radicados no Válidos" },
+                { "content": "11. Topes" }
+              ]}
+            ]},
+            { "content": "2. Validaciones Año 2024", "children": [
+            { "content": "1. Reclamaciones  Aprobadas Total y Parcial con Valor Aprobado Cero" },
+            { "content": "2. Reclamaciones en Estado Aprobada Total con Valor Glosado" },
+            { "content": "3. Reclamaciones Aprobadas Parciales Sin Valor Glosado" },
+            { "content": "4. Reclamaciones Aprobadas Total o Parcialmente Duplicadas Por Número de Reclamación" },
+            { "content": "5. Reclamaciones No Aprobadas Duplicadas Por Número de Reclamación" },
+            { "content": "6. Reclamaciones NO Aprobadas con Valor Aprobado" },
+            { "content": "7. Posibles Pagos Dobles – Duplicados" },
+            { "content": "8. Reclamaciones Nuevas NO Extemporáneas con Glosa 2003" },
+            { "content": "9. Reclamaciones Aprobadas Parciales y NO APROBADAS Sin Glosas" },
+            { "content": "10. Códigos de Glosa sin Descripción o errada" },
+            { "content": "11. Reclamaciones Aprobadas Total Con Glosas" },
+            { "content": "12. Glosas Automáticas Sin Levantar" },
+            { "content": "13. Glosas Automáticas Sin Ratificar" },
+            { "content": "14. Extemporaneidad (Resolución 1915 de 2008) > 30 Días en Reclamaciones Respuesta a Glosa - Sin Glosa 2007 - Personas Jurídicas" },
+            { "content": "15. Extemporaneidad (Resolución 1645 de 2016) > 60 Días en Reclamaciones Respuesta a Glosa - Sin Glosa 2008 - Personas Jurídicas" },
+            { "content": "16. Fecha de Evento Posterior a la Fecha de Muerte" },
+            { "content": "17. Sin Fecha de Muerte (Amparos Reclamados)" },
+            { "content": "18. Automatización SQL 2024", "children": [
+              { "content": "1. Verificación campo Placas furisp sql" },
+              { "content": "2. Extemporáneo sql" },
+              { "content": "3. Cruce base de datos sql" },
+              { "content": "4. Validación campos furips sql" },
+              { "content": "5. validación error pre-cierre sql" },
+              { "content": "6. Radicados no validos sql" },
+              { "content": "7. Encabezado furips bsae de datos" },
+              { "content": "8. Validación Reps" }
+            ]},
+            ]},
+            { "content": "3. Distribución de Universos", "children": [
+              { "content": "1. Componente Soportes", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" },
+              ]},
+              { "content": "2. Componente Financiero", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" }, 
+                ]},
+              { "content": "3. Componente Médico", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" }, 
+                ]},
+                { "content": "4. Componente Integración / Calidad Interna", "children": [
+                { "content": "1. Alistamiento de Información para Auditoría" },
+                { "content": "2. Asignación de universo por el área de sistemas" }, 
+                ]},  
+            ]},
+            
+            { "content": "4. Auditoría Componentes", "children": [
+              { "content": "1. Componente Soportes", "children": [
+                { "content": "1. 130 Reclamaciones diarias" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 10 Auditores en Promedio" }
+              ]},
+              { "content": "2. Componente Financiero" , "children": [
+                { "content": "1. 160 Reclamaciones diarias" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 13 Auditores en Promedio" }
+              ]},
+              { "content": "3. Componente Médico" , "children": [
+                { "content": "1. 160 Reclamaciones diarias" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 10 Auditores en Promedio" }
+              ]}
+            ]},
+            
+            { "content": "5. Auditoria Integración / Calidad Interna", "children": [
+            { "content": "1. Componente Soportes", "children": [
+                { "content": "1. 25 Reclamaciones diarias, aprox. mitad de la producción general" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 1 Auditores en Promedio" }
+              ]},
+              { "content": "2. Componente Financiero" , "children": [
+                { "content": "1. 60 Reclamaciones diarias, aprox. mitad de la producción general" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 2 Auditores en Promedio" }
+              ]},
+              { "content": "3. Componente Médico" , "children": [
+                { "content": "1. 80 Reclamaciones diarias, aprox. mitad de la producción general" },
+                { "content": "2. Superior a 8 horas diarias" },
+                { "content": "3. 2 Auditores en Promedio" }
+              ]}
+            ]},
+            { "content": "6. Pre-cierre de Paquete", "children": [
+            { "content": "1. Solicitud Conformar paquete ", "children": [
+                { "content": "1. Área de Sistemas" }
+                ]},    
+            { "content": "2. Validaciones finales Internas pre-cierre ", "children": [
+                { "content": "1. Integración" },
+                { "content": "2. Ajustes Error Componentes" }
+                ]},
+            { "content": "3. Entrega de pre-cierre ", "children": [
+                { "content": "1. Área de Givac" },
+                ]},            
+              
+            ]}, 
+            { "content": "7. Resultado Muestra calidad Givra", "children": [
+              { "content": "1. Recepción No Conformidades "},
+              { "content": "2. Conciliación "},
+              { "content": "3. Ajustes posteriores"}           
+            ]},
+            { "content": "8. Cierre de paquete", "children": [
+              { "content": "1. Verificación de ajustes"},
+              { "content": "2. Solicitud de seguimientos"},
+              { "content": "3. Entrega de paquete"}           
+            ]},
+            { "content": "9. Reintegro de Recursos", "children": [
+              { "content": "1. Solicitud de reconocimiento del área de pago"},
+              { "content": "2. Grupo de Auditoria en campo"},
+              { "content": "3. Validaciones Internas"},
+              { "content": "4. Auditoria", "children":[
+                { "content": "1. Grupo de Calidad Interna" },
+                ] },
+              { "content": "5. Validaciones Internas"}           
+            ]},
+          ]
+        },        
+      ]
+    },
+    {
+  "content": "2. Justificación",
+  "children": [
+     {"content": "Justificación de la producción año 2023: validar archivo TIEMPO Y MOVIMIENTOS GIVAC 2023"}, 
+    { "content": "**La verificación del criterio de auditoría:** Habilitación de servicios reclamados 2024, se realiza por parte de un grupo auditor especializado en este criterio dada la especificidad y control que requiere su evaluación."
+    }
+  ]
+}
+,
+    {
+      "content": "3. Proyección",
+      "children": [
+        { "content": "1. Auditoría Componentes", "children": [
+          { "content": "1. Componente Soportes", "children": [
+            { "content": "1. XX Reclamaciones diarias" },
+            { "content": "2. NO Superior a 8 horas diarias" },
+            { "content": "3. XX Auditores en promedio" }
+          ]},
+          { "content": "1. Componente Financiero", "children": [
+            { "content": "1. XX Reclamaciones diarias" },
+            { "content": "2. NO Superior a 8 horas diarias" },
+            { "content": "3. XX Auditores en promedio" }
+          ]},
+          { "content": "1. Componente Médico", "children": [
+            { "content": "1. XX Reclamaciones diarias" },
+            { "content": "2. NO Superior a 8 horas diarias" },
+            { "content": "3. XX Auditores en promedio" }
+          ]}
+        ]},
+
+        { "content": "2. Auditoria Integración / Calidad Interna", "children": [
+          { "content": "1. Componente Soportes", "children": [
+            { "content": "1. XX Reclamaciones diarias, aprox. mitad de la producción general diarias" },
+            { "content": "2. NO Superior a 8 horas diarias" },
+            { "content": "3. XX Auditores en promedio" }
+          ]},
+          { "content": "1. Componente Financiero", "children": [
+            { "content": "1. XX Reclamaciones diarias, aprox. mitad de la producción general diarias" },
+            { "content": "2. NO Superior a 8 horas diarias" },
+            { "content": "3. XX Auditores en promedio" }
+          ]},
+          { "content": "1. Componente Médico", "children": [
+            { "content": "1. XX Reclamaciones diarias, aprox. mitad de la producción general diarias" },
+            { "content": "2. NO Superior a 8 horas diarias" },
+            { "content": "3. XX Auditores en promedio" }
+          ]}
+        ]},
+        { "content": "3. Reintegro de Recursos", "children": [
+              { "content": "1. Solicitud de reconocimiento del área de pago"},
+              { "content": "2. Grupo de Auditoria en campo"},
+              { "content": "3. Validaciones Internas"},
+              { "content": "4. Auditoria", "children":[
+                { "content": "1. Grupo de Calidad Interna" },
+                ] },
+              { "content": "5. Validaciones Internas"}           
+            ]},
+
+      ]
+    }
+  ]
+});
+</script>
+</body>
+</html>
